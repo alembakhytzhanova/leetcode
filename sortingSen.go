@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"strings"
 	"unicode"
 )
@@ -43,6 +42,6 @@ func SortSentence(s string) string {
 	return res
 }
 
-func main() {
-	fmt.Println(SortSentence("is2 sentence4 This1 a3"))
-}
+// func main() {
+// 	fmt.Println(SortSentence("is2 sentence4 This1 a3"))
+// }
