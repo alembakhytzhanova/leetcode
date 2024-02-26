@@ -17,3 +17,19 @@ func countMatches(items [][]string, ruleKey string, ruleValue string) int {
 // 	fmt.Println(case1)
 // 	fmt.Println(case2)
 // }
+
+func countMatches(items [][]string, ruleKey string, ruleValue string) int {
+	sourceMap := map[string]int{
+		"type":  0,
+		"color": 1,
+		"name":  2,
+	}
+	res := 0
+	for _, item := range items {
+		index := sourceMap[ruleKey]
+		if item[index] == ruleValue {
+			res++
+		}
+	}
+	return res
+}
