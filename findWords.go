@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func findWordsContaining(words []string, x byte) []int {
 	var result []int
 
@@ -17,9 +15,9 @@ func findWordsContaining(words []string, x byte) []int {
 	return result
 }
 
-func main() {
-	fmt.Println(findWordsContaining([]string{"leet", "code"}, byte('e')))              // [0,1]
-	fmt.Println(findWordsContaining([]string{"abc", "bcd", "aaaa", "cbc"}, byte('a'))) // [0,2]
-	fmt.Println(findWordsContaining([]string{"abc", "bcd", "aaaa", "cbc"}, byte('z'))) // []
+// func main() {
+// 	fmt.Println(findWordsContaining([]string{"leet", "code"}, byte('e')))              // [0,1]
+// 	fmt.Println(findWordsContaining([]string{"abc", "bcd", "aaaa", "cbc"}, byte('a'))) // [0,2]
+// 	fmt.Println(findWordsContaining([]string{"abc", "bcd", "aaaa", "cbc"}, byte('z'))) // []
 
-}
+// }
