@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func sumOfMultiples(n int) int {
 	sum := 0
 
@@ -13,6 +11,6 @@ func sumOfMultiples(n int) int {
 	return sum
 }
 
-func main() {
-	fmt.Println(sumOfMultiples(10))
-}
+// func main() {
+// 	fmt.Println(sumOfMultiples(10))
+// }
