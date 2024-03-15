@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func sumOfUnique(nums []int) int {
 
 	occurrences := make(map[int]int)
@@ -21,6 +19,6 @@ func sumOfUnique(nums []int) int {
 	return sum
 }
 
-func main() {
-	fmt.Println(sumOfMultiples([]int{1, 2, 3, 2}))
-}
+// func main() {
+// 	fmt.Println(sumOfMultiples([]int{1, 2, 3, 2}))
+// }
