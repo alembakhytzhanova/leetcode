@@ -32,9 +32,6 @@ Each problem is located in a separate folder, identified by its number or name. 
 
 3. Open the solution file in your preferred integrated development environment or text editor.
 
-## Programming Languages
-
-In this repository, you'll find solutions in various programming languages, including but not limited to Python, Java, C++, JavaScript, Go, and others.
 
 ## Feedback
 
