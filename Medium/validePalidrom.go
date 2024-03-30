@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"strings"
 )
 
@@ -31,9 +30,9 @@ func isAlphanumeric(char byte) bool {
 	return (char >= '0' && char <= '9') || (char >= 'a' && char <= 'z')
 }
 
-func main() {
-	fmt.Println(isPalindrome("A man, a plan, a canal: Panama"))
-	fmt.Println(isPalindrome("race a car"))
-	fmt.Println(isPalindrome(" "))
+// func main() {
+// 	fmt.Println(isPalindrome("A man, a plan, a canal: Panama"))
+// 	fmt.Println(isPalindrome("race a car"))
+// 	fmt.Println(isPalindrome(" "))
 
-}
+// }
