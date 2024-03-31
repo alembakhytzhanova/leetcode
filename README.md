@@ -1,9 +1,3 @@
-# leetcode
-
-Certainly! Here's a README file template for a LeetCode project:
-
----
-
 # LeetCode Problem Solutions
 
 This repository contains solutions to problems from the LeetCode platform. LeetCode offers a variety of algorithm, data structure, and interview-related problems that are helpful for preparing for technical interviews in the IT industry.
