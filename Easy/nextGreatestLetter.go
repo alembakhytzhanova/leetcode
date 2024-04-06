@@ -8,6 +8,7 @@ func nextGreatestLetter(letters []byte, target byte) byte {
 
 	for left < right {
 		mid := left + (right-left)/2
+		fmt.Println("mid", mid)
 
 		if letters[mid] <= target {
 			left = mid + 1
@@ -22,6 +23,6 @@ func nextGreatestLetter(letters []byte, target byte) byte {
 	return letters[left]
 }
 
-// func main() {
-// 	fmt.Println(nextGreatestLetter([]byte{'c', 'f', 'j'}, 'a'))
-// }
+func main() {
+	fmt.Println(nextGreatestLetter([]byte{'c', 'f', 'j'}, 'a'))
+}
