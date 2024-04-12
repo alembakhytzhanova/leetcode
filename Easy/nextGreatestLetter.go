@@ -23,6 +23,6 @@ func nextGreatestLetter(letters []byte, target byte) byte {
 	return letters[left]
 }
 
-func main() {
-	fmt.Println(nextGreatestLetter([]byte{'c', 'f', 'j'}, 'a'))
-}
+// func main() {
+// 	fmt.Println(nextGreatestLetter([]byte{'c', 'f', 'j'}, 'a'))
+// }
