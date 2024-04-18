@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"math"
 )
 
@@ -49,6 +48,6 @@ func maximum(m []int) int {
 // 	return minInt
 // }
 
-func main() {
-	fmt.Println(minEatingSpeed([]int{3, 6, 7, 11}, 8))
-}
+// func main() {
+// 	fmt.Println(minEatingSpeed([]int{3, 6, 7, 11}, 8))
+// }
