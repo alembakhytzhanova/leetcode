@@ -4,19 +4,17 @@ import "fmt"
 
 func countStudents(students []int, sandwiches []int) int {
 	i := len(students)
-
 	c := len(students) * len(students)
 
 	for i > 0 {
-		if sandwiches[0] == sandwiches[0] {
-			students = sandwiches[1:]
+		if students[0] == sandwiches[0] {
+			students = students[1:]
 			sandwiches = sandwiches[1:]
 			i--
-
 		} else {
-			t := sandwiches[0]
-			sandwiches = sandwiches[1:]
-			sandwiches = append(sandwiches, t)
+			t := students[0]
+			students = students[1:]
+			students = append(students, t)
 			if c == 0 {
 				return i
 			}
