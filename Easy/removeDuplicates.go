@@ -1,24 +1,26 @@
 package main
 
-func removeDuplicates(nums []int) int {
-	l := 0
+func removeDuplicates(s string) string {
+	if len(s) <= 0 {
+		return "0"
+	}
+	stack := []rune{}
 
-	for i := 1; i < len(nums); i++ {
-		if nums[l] != nums[i] {
-			l++
+	for _, ch := range s {
+		if len(stack) > 0 && stack[len(stack)-1] == ch {
+			//fmt.Println("len(stack)", stack[len(stack)-1])
 
-			nums[l] = nums[i]
+			stack = stack[0 : len(stack)-1]
+		} else {
+			stack = append(stack, ch)
+			//fmt.Println("stack", "ch", stack, ch)
 
 		}
-
 	}
-	nums = nums[:l+1]
-
-	return len(nums)
-
+	return string(stack)
 }
 
 // func main() {
-// 	//fmt.Println(removeDuplicates([]int{1, 1, 2}))
-// 	fmt.Println(removeDuplicates([]int{0, 0, 1, 1, 1, 2, 2, 3, 3, 4}))
+// 	fmt.Println(removeDuplicates("abbaca"))
+// 	fmt.Println(removeDuplicates("azxxzy"))
 // }

@@ -1,47 +1,40 @@
 package main
 
-// func main() {
-// 	var a, b, c int
-// 	fmt.Scan(&a)
-// 	fmt.Scan(&b)
-// 	fmt.Scan(&c)
-// 	if a+b == c || a+c == b || b+c == a {
-// 		fmt.Println("YES")
-// 	} else {
-// 		fmt.Println("NO")
-// 	}
-// }
+import "log"
 
-//2
+type Stack struct {
+	content []int
+}
 
-// func main() {
-// 	var director string
-// 	fmt.Scan(&director)
-// 	x, y := 0, 0
-// 	visited := make(map[[2]int]int)
-// 	visited[[2]int{x, y}]++
+//func main() {
+	s := Stack{}
+	s.Push(12)
+	s.Push(8)
+	s.Display()
 
-// 	for _, ch := range director {
-// 		switch ch {
-// 		case 'U':
-// 			y++
-// 		case 'R':
-// 			x++
-// 		case 'D':
-// 			y--
-// 		case 'L':
-// 			x--
+	log.Print(s.Pop())
+	log.Print(s.Pop())
+	log.Print(s.Pop())
 
-// 		}
-// 		visited[[2]int{x, y}]++
-// 	}
-// 	count := 0
-// 	for _, v := range visited {
-// 		if v > 1 {
-// 			count++
-// 		}
-// 	}
-// 	fmt.Println(count)
-// }
+	s.Display()
+}
 
-// 3 zadacha
+func (stack *Stack) Display() {
+	log.Print(stack.content)
+}
+
+func (stack *Stack) Push(item int) {
+	stack.content = append(stack.content, item)
+}
+
+func (stack *Stack) Pop() int {
+	if len(stack.content) == 0 {
+		return 0
+	}
+	lastItemIndex := len(stack.content) - 1
+	lastItem := stack.content[lastItemIndex]
+
+	stack.content = stack.content[:lastItemIndex]
+	return lastItem
+
+}
