@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func removeDuplicates(s string) string {
 	if len(s) <= 0 {
 		return "0"
@@ -22,7 +20,7 @@ func removeDuplicates(s string) string {
 	return string(stack)
 }
 
-func main() {
-	fmt.Println(removeDuplicates("abbaca"))
-	fmt.Println(removeDuplicates("azxxzy"))
-}
+// func main() {
+// 	fmt.Println(removeDuplicates("abbaca"))
+// 	fmt.Println(removeDuplicates("azxxzy"))
+// }

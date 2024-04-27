@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func removeStars(s string) string {
 	stack := []rune{}
 	for _, ch := range s {
@@ -14,6 +12,6 @@ func removeStars(s string) string {
 	return string(stack)
 }
 
-func main() {
-	fmt.Println(removeStars("leet**cod*e"))
-}
+// func main() {
+// 	fmt.Println(removeStars("leet**cod*e"))
+// }
