@@ -9,14 +9,9 @@ func validateStackSequences(pushed []int, popped []int) bool {
 		stack = append(stack, v)
 		for len(stack) > 0 && stack[len(stack)-1] == popped[j] {
 			stack = stack[:len(stack)-1]
-            j++
+			j++
 		}
 	}
-    fmt.Println(stack)
+	fmt.Println(stack)
 	return len(stack) == 0
-}
-
-
-func main() {
-
 }
