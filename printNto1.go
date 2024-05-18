@@ -2,14 +2,15 @@ package main
 
 import "fmt"
 
-func printN(n int) {
+func printNto1(n int) {
 	if n > 0 {
-		printN(n - 1)
 		fmt.Println(n)
+		printNto1(n - 1)
+
 	}
 }
 
 // func main() {
 // 	n := 10
-// 	printN(n)
+// 	printNto1(n)
 // }
